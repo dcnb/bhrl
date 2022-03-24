@@ -32,7 +32,6 @@ layout: default
     <textarea name="message" style="min-height:150px" class="col-12 col-sm-8 ">{%for answer in answers %}{% if answer.text and answer.subsection == sub.title%}{{answer.text | replace: " | ", "&#013"}}{%endif%}{%endfor%}</textarea>
     <hr/>
 </form>
-
 {%endfor%}
 </div>
 </div>
